@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Picture tooltip</title>
+<style>
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: Yellow;
+    color: Black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    Border-color: black;
+    Border-width: 1px;
+    Border-style: solid;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+</style>
+</head>
+<body>
+<center>
+<table border='1'>
+<tr><td class='tooltip'><img src='images/emma.jpg'><span class='tooltiptext'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td><td valign='top'>Name: Emma Watson<br>Profission: Actress</td></tr>
+</table>
+</center>
+</body>
+
